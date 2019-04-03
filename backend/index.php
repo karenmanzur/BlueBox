@@ -42,11 +42,11 @@
         "correo" : correo,
         "pswd" :  password
       };
-      $.post("includes/_funciones.php", obj, function(r){
+      $.post("includes/funciones.php", obj, function(r){
         if(r == "1"){
           window.location.replace("usuarios.php");
         }else{
-          console.log("No concect");
+          console.log("Can't connect");
         }
       });
     });
