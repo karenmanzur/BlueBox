@@ -12,7 +12,7 @@
   <div class="login">
     <div class="login-screen">
       <div class="app-title">
-        <img src="../img/logo.png" alt="">
+        <img src="../img/logotipo.png" alt="logo BlueBox">
       </div>
 
       <div class="login-form">
@@ -40,13 +40,13 @@
       let obj = {
         "accion" : "login",
         "correo" : correo,
-        "pswd" :  password
+        "password" :  password
       };
       $.post("includes/funciones.php", obj, function(r){
         if(r == "1"){
           window.location.replace("usuarios.php");
         }else{
-          console.log("Can't connect");
+          console.log("Can't connect to database");
         }
       });
     });

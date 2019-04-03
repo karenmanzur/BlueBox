@@ -1,18 +1,21 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+
+}
 body{
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Open Sans', sans-serif;
 }
 
 header{
-
 justify-content: flex-end;
 margin-top: 30px;
 margin: 30px auto;
-
 }
 
-header .nav-link{ 
-
-float: left;
+nav .li .nav-link { 
+float: right;
 color: #000;
 margin-right:6.6%;
 padding-top: 0px;
@@ -49,8 +52,6 @@ margin-top: 53px;
 }
 
 #word{
-
-font-family: 'Relaway'; 
 color: #fff; 
 margin-top: 60px;
 text-align: center;
@@ -59,7 +60,7 @@ font-size: 40px;
 
 }
 
-#learn{
+.learn{
 
 margin: 5px auto;
 position: relative;
