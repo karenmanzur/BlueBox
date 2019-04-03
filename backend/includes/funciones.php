@@ -17,7 +17,11 @@ switch ($_POST["accion"]) {
 		eliminar_usuario($_POST['id']);
 		break;
 
-		default:
+	case 'consultar_registro':
+		consultar_registro($_POST['id']);
+		break;
+
+	default:
 		
 	break;
 }
@@ -82,4 +86,12 @@ function eliminar_usuario($id){
 	} else {
 		echo "0";
 	}
+}
+
+function consultar_registro($id){
+	global $mysqli;
+	$consulta = "SELECT * FROM usuarios where id_user = $id LIMIT 1";
+	$resultado = mysqli_query($mysqli, $consulta);
+	$fila = mysqli_fetch_array($resultado);
+	echo json_encode($fila); 
 }

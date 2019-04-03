@@ -13,7 +13,7 @@
 <body>
    	<main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-4" id="main">
         <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
-          <h1 class="h2">Dashboard</h1>
+          <h1 class="h2">BlueBox</h1>
           <div class="btn-toolbar mb-2 mb-md-0">
             <div class="btn-group mr-2">
               <button type="button" class="btn btn-sm btn-outline-danger cancelar">Cancelar</button>
@@ -46,11 +46,6 @@
                   <label for="correo">Correo Electrónico</label>
                   <input type="email" id="correo" name="correo" class="form-control">
                 </div>
-                <div class="form-group">
-                 <input type="file" id="foto" name="foto"  accept="image/x-png,image/gif,image/jpeg">
-                <input type="hidden" name="ruta" id="ruta" readonly="readonly">
-              </div>
-                 <div id="preview"></div>
               </div>
               <div class="col">
                 <div class="form-group">
