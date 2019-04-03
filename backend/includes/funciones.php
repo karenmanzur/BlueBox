@@ -14,12 +14,16 @@ switch ($_POST["accion"]) {
 	break;
 
 	case 'eliminar_registro':
-		eliminar_usuario($_POST['id']);
-		break;
+	eliminar_usuario($_POST['id']);
+	break;
 
 	case 'consultar_registro':
-		consultar_registro($_POST['id']);
-		break;
+	consultar_registro($_POST['id']);
+	break;
+
+	case 'editar_usuarios':
+	editar_usuarios($_POST['id']);
+	break;
 
 	default:
 		
@@ -94,4 +98,17 @@ function consultar_registro($id){
 	$resultado = mysqli_query($mysqli, $consulta);
 	$fila = mysqli_fetch_array($resultado);
 	echo json_encode($fila); 
+}
+
+function editar_usuarios(){
+	global $mysqli;
+	extract($_POST);
+	$consulta = "UPDATE usuarios SET nombre_user = '$nombre', correo_user = '$correo', 
+	pass_user = '$password', tel_user = '$telefono' WHERE id_user = '$id' ";
+	$resultado = mysqli_query($mysqli, $consulta);
+	if($resultado){
+		echo "Se editó correctamente";
+	}else{
+		echo "Se generó un error, intentalo nuevamente";
+	}
 }

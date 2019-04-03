@@ -8,6 +8,7 @@
   <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
   <meta name="generator" content="Jekyll v3.8.5">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <link rel="icon" href="../img/icon.png">
   
 </head>
 <body>
@@ -182,7 +183,7 @@
           $.post("includes/funciones.php",obj,function(r){
             $("#nombre").val(r.nombre_user);
             $("#correo").val(r.correo_user);
-            $("#telefono").val(r.tel_usr);
+            $("#telefono").val(r.tel_user);
             $("#password").val(r.pass_user);
           },"JSON");
           console.log(obj);
