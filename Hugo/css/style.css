@@ -1,0 +1,140 @@
+html, body, div, h1, h2, h3, h4, h5, h6, p, img {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+body {
+	font-family: 'Open Sans', sans-serif;
+	background: #fff;
+}
+
+.warp {
+	width: 80%;
+	margin: 0 auto;
+}
+
+/*WHAT WE DO*/
+
+.content-top {
+	padding: 7% 0 5% 0;
+}
+
+.col_what {
+	display: block;
+	float: left;
+	margin: 0% 0 0% 5.6%;
+	text-align: center;
+}
+
+.col_what:first-child {
+	margin-left: 0;
+}
+
+.span_what p {
+	font-size: 0.85em;
+	padding: 0.5em 0;
+	color: #999;
+	line-height: 1.8em;
+}
+.span_what h3{
+	color: #555;
+    margin-bottom: 0.5em;
+    font-size: 1.5em;
+    line-height: 1.2;
+    font-weight: normal;
+    margin-top: 0px;
+    letter-spacing: -1px;
+    text-transform: uppercase;
+}
+
+.span_what .btn-link {
+	padding-top: 10px;
+}
+
+.span_what .btn-link a {
+	color: #00aeff;
+	cursor: pointer;
+	font-size: 0.85em;
+	text-decoration: none;
+	text-transform: uppercase;
+}
+
+.span_what .btn-link a:hover {
+	color: #333;
+}
+
+.span_what {
+	width: 29.2%;
+}
+
+/*RESPONSIVE*/
+
+@media (max-width:1366px) {
+	.wrap {
+		width: 90%;
+	}
+}
+
+@media (max-width:1280px) {
+	.wrap {
+		width: 90%;
+	}
+}
+
+@media (max-width:1024px) {
+	.wrap {
+		width: 90%;
+	}
+}
+
+@media (max-width:800px) {
+	.wrap {
+		width: 90%;
+	}
+}
+
+@media (max-width:768px) {
+	.wrap {
+		width: 90%;
+	}
+}
+
+@media (max-width:640px) {
+	.wrap {
+		width: 90%;
+	}
+	.span_what {
+		width: 100%;
+	}
+	.col_what {
+		margin: 0;
+	}
+}
+
+@media (max-width:480px) {
+	.wrap {
+		width: 90%;
+	}
+	.span_what {
+		width: 100%;
+	}
+	.col_what {
+		margin: 0;
+	}
+}
+
+@media (max-width:320px) {
+	.wrap {
+		width: 90%;
+	}
+	.span_what {
+		width: 100%;
+	}
+	.col_what {
+		margin: 0;
+	}
+}
