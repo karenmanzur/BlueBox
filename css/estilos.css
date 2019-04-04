@@ -19,6 +19,7 @@ padding-top: 0px;
 width: 70.5%;
 font-size: 15px;
 left: 40px;
+font-family: 'Open Sans', sans-serif;
 
 }
 
@@ -36,6 +37,7 @@ position: relative;
 font-size: 13px;
 left: 45px;
 bottom: 10px;
+font-family: 'Open Sans', sans-serif;
 
 }
 
@@ -55,7 +57,14 @@ color: #fff;
 margin-top: 60px;
 text-align: center;
 position: relative;
-font-size: 40px;
+font-size: 35px;
+font-family: 'Open Sans', sans-serif;
+
+}
+
+.container ul li {
+
+font-family: 'Open Sans', sans-serif;
 
 }
 
@@ -65,6 +74,18 @@ margin: 5px auto;
 position: relative;
 left: 700px;
 bottom: 45px;
+font-family: 'Open Sans', sans-serif;
+
+
+}
+
+.slider {
+
+	padding-top: 90px;
+	text-align: center;
+	overflow: hidden;
+	display: flex;
+	width: 100%;
 
 }
 
@@ -72,8 +93,40 @@ bottom: 45px;
      
    text-align: center;
    padding-top: 90px;
-} 
+}
+/*
+.slider ul {
 
+	display: flex;
+	padding: 0;
+	width: 100%;
+	animation: cambio 20s infinite alternate linear;
+
+}
+
+.slider li {
+
+	list-style: none;
+
+}
+
+.slider img {
+
+	width: 100%;
+
+}
+
+@keyframes cambio {
+
+	0% {margin-left: 0;}
+	20% {margin-left: 0;}
+	
+	25% {margin-left: -100%;}
+	45% {margin-left: -100%;}
+	
+
+}
+*/
 
 /*css Hugo*/
 html, body, div, h1, h2, h3, h4, h5, h6, p, img {
