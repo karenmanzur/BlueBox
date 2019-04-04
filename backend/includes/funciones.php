@@ -41,7 +41,7 @@ function login(){
 		
 		session_start();
         error_reporting(0);
-        $_SESSION['usuario'] = $correo;
+        $_SESSION['usuarios'] = $correo;
   
         echo "1"; 
       }
