@@ -6,73 +6,16 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
 <!-- jQuery -->
-<script type="text/javascript" src="js/jquery.min.js"></script>
-<!-- Add fancyBox main JS and CSS files -->
 
-   <script src="js/jquery.hoverdir.js"></script>
-		<script type="text/javascript">
-			$(function() {
-			
-				$(' #da-thumbs > li ').each( function() { $(this).hoverdir({
-					hoverDelay : 50,
-					inverse : true
-				}); } );
-
-			});
-    </script>
 </head>
 <body>
-<script src='//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js'></script><script src="//m.servedby-buysellads.com/monetization.js" type="text/javascript"></script>
-<script>
-(function(){
-	if(typeof _bsa !== 'undefined' && _bsa) {
-  		// format, zoneKey, segment:value, options
-  		_bsa.init('flexbar', 'CKYI627U', 'placement:w3layoutscom');
-  	}
-})();
-</script>
-<script>
-(function(){
-if(typeof _bsa !== 'undefined' && _bsa) {
-	// format, zoneKey, segment:value, options
-	_bsa.init('fancybar', 'CKYDL2JN', 'placement:demo');
-}
-})();
-</script>
+<script src='//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js'></script>
+
+
 
 
 <body>
-
-            	 <script src="js/jquery.wmuSlider.js"></script> 
-					<script>
-       				     $('.example1').wmuSlider();         
-   					</script> 	           	      
-   		</div>
-   		<div class="main">
-		   <div class="wrap">
-			 <div class="content-top">
-				<div class="col_1_of_3 span_1_of_3">
-					<h3>Web Design</h3>
-					<img src="images/icon.png" alt=""/>
-					<p>Lorem ipsum dolor sit amet, consectetur <br>adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.</p>
-					<div class="btn-link"><a href="#">read more</a></div>
-				</div>
-				<div class="col_1_of_3 span_1_of_3">
-					<h3>Social Media</h3>
-					<img src="images/icon1.png" alt=""/>
-					<p>Lorem ipsum dolor sit amet, consectetur <br>adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.</p>
-					<div class="btn-link"><a href="#">read more</a></div>
-				</div>
-				<div class="col_1_of_3 span_1_of_3">
-					<h3>Mobile Apps</h3>
-					<img src="images/icon2.png" alt=""/>
-					<p>Lorem ipsum dolor sit amet, consectetur <br>adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.</p>
-					<div class="btn-link"><a href="#">read more</a></div>
-				</div>
-			    <div class="clear"></div>
-			</div>
-
-
+ 
     <div class="clients">
 	  <div class="wrap">
 	  	<h2 class="head">Clients</h2>
@@ -152,10 +95,10 @@ if(typeof _bsa !== 'undefined' && _bsa) {
 			</div>
 			<div class="social">	
 	           <ul>	
-				    <li class="facebook"><a href="#"><span> </span></a></li>
-				    <li class="linkedin"><a href="#"><span> </span></a></li>
-				    <li class="twitter"><a href="#"><span> </span></a></li>	 
-				    <li class="pinterest"><a href="#"><span> </span></a></li>
+				    <li class="facebook"><a href="#facebook" ><img src="images/facebook.png" /><span> </span></a></li>
+				    <li class="linkedin"><a href="#pinterest"><img src="images/pinterest.png" /><span> </span></a></li>
+				    <li class="twitter"><a href="#nose como se llama xD"><img src="images/in2.png" /><span> </span></a></li>	 
+				    <li class="pinterest"><a href="#TWITTER"><img src="images/twitter.png" /><span> </span></a></li>
 				    <li class="dribble"><a href="#"><span> </span></a></li>			
 					<li class="google"><a href="#"><span> </span></a></li>
 			  </ul>
