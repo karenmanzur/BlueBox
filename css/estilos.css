@@ -79,54 +79,87 @@ font-family: 'Open Sans', sans-serif;
 
 }
 
-.slider {
-
-	padding-top: 90px;
-	text-align: center;
-	overflow: hidden;
-	display: flex;
-	width: 100%;
-
-}
-
 #computadora{   
      
    text-align: center;
    padding-top: 90px;
 }
-/*
-.slider ul {
 
-	display: flex;
+*{
+
+	margin: 0;
 	padding: 0;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+
+}
+
+
+body{
+
+	font-family: 'Open Sans', sans-serif;
+}
+
+.slideshow{
+
 	width: 100%;
-	animation: cambio 20s infinite alternate linear;
+    position: relative;
 
 }
 
-.slider li {
+.slider li, img{
 
-	list-style: none;
-
-}
-
-.slider img {
-
-	width: 100%;
+text-align: center;
+margin-top: 80px;
 
 }
 
-@keyframes cambio {
+.pagination{
 
-	0% {margin-left: 0;}
-	20% {margin-left: 0;}
-	
-	25% {margin-left: -100%;}
-	45% {margin-left: -100%;}
-	
+display: flex;
+position: absolute;
+justify-content: center;
+top: 102%;
+width: 100%;
+justify-content: center;
 
 }
-*/
+
+.pagination li{
+
+	font-size: 20px;
+	margin: 2px 5px;
+	color: #858585;
+	cursor: pointer;
+}
+
+.left, .right{
+
+ position: absolute;
+ top: 0;
+ height: 100%;
+ display: flex;
+ align-items: center;
+ color: #9c9c9c;
+ font-size: 40px;
+ z-index: 2;
+ cursor: pointer;
+ margin-top: 75px;
+
+}
+
+.left{
+
+	left: 10px;
+
+}
+
+.right{
+
+	right: 10px;
+
+}
 
 /*css Hugo*/
 html, body, div, h1, h2, h3, h4, h5, h6, p, img {
@@ -269,3 +302,4 @@ html, body, div, h1, h2, h3, h4, h5, h6, p, img {
 		margin: 0;
 	}
 }
+
