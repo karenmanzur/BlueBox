@@ -23,6 +23,12 @@ font-family: 'Open Sans', sans-serif;
 
 }
 
+.nav-link:hover{
+
+	color: blue;
+
+}
+
 #logo{
 
 position:relative;
