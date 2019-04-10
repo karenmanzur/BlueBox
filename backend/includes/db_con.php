@@ -1,5 +1,5 @@
 <?php 
-$server = "bluebox.gpcamaras.com";
+$server = "gpcamaras.com";
 $database = "bluebox";
 $user = "team_blue";
 $password = "SF4CUfdmj2";

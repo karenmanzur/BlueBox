@@ -1,19 +1,19 @@
 <?php 
-require_once("db_con.php");
-switch ($_POST["accion"]) {
-	case 'login':
+require_once("db_con.php"); //Conexion a la base de datos
+switch ($_POST["accion"]) { 
+	case 'login':  //case para el login
 	login();
 	break;
 
-	case 'consultar_usuarios':
+	case 'consultar_usuarios': //consultar usuarios
 	consultar_usuarios();
 	break;
 
-	case 'insertar_usuarios':
+	case 'insertar_usuarios': //insertar usuarios
 	insertar_usuarios();
 	break;
 
-	case 'eliminar_registro':
+	case 'eliminar_registro': //eliminar registro
 	eliminar_usuario($_POST['id']);
 	break;
 
@@ -21,15 +21,36 @@ switch ($_POST["accion"]) {
 	consultar_registro($_POST['id']);
 	break;
 
-	case 'editar_usuarios':
+	case 'editar_usuarios': //editar registro
 	editar_usuarios($_POST['id']);
+	break;
+
+//FUNCIONES KAREN
+	case 'consultar_works':
+	consultar_works();
+	break;
+
+	case 'editar_works':
+	editar_works($_POST['id']);
+	break;
+
+	case 'eliminar_works':
+	eliminar_works($_POST['id']);
+	break;
+
+	case 'consultar_test':
+	consultar_test($_POST['id']);
+	break;
+
+	case 'carga_foto':
+	carga_foto();
 	break;
 
 	default:
 		
 	break;
 }
-
+//Funciones generales
 function login(){
 	global $mysqli;
 	$correo = $_POST['correo']; 
@@ -112,3 +133,68 @@ function editar_usuarios(){
 		echo "Se generó un error, intentalo nuevamente";
 	}
 }
+
+
+//Funciones Works - Karen
+function consultar_works(){
+	global $mysqli;
+	$consulta = "SELECT * FROM works";
+	$resultado = mysqli_query($mysqli, $consulta);
+	$arreglo = [];
+	while($fila = mysqli_fetch_array($resultado)){
+		array_push($arreglo, $fila);
+	}
+	echo json_encode($arreglo); 
+}
+
+function consultar_test($id){
+	global $mysqli;
+	$consulta = "SELECT * FROM works WHERE works_id = $id LIMIT 1";
+	$resultado = mysqli_query($mysqli, $consulta);
+	$fila = mysqli_fetch_array($resultado);
+	echo json_encode($fila); 
+}
+
+function editar_works($id){
+  global $mysqli;
+  extract($_POST);
+  $consulta = "UPDATE works SET works_file = '$ruta', works_subtitle = '$texto', works_title = '$nombre' WHERE works_id = '$id' ";
+  $resultado = mysqli_query($mysqli, $consulta);
+  if($resultado){
+    echo "Se editó correctamente";
+  }else{
+    echo "Se generó un error, intentalo nuevamente";
+  }
+}
+
+ function eliminar_works($id){
+  global $mysqli;
+  $query = "DELETE FROM works WHERE works_id = $id";
+  $resultado = mysqli_query($mysqli, $query);
+  if ($resultado) {
+    echo "1";
+  } else {
+    echo "0";
+  }
+}
+
+function carga_foto(){
+	if (isset($_FILES["foto"])) {
+		$file = $_FILES["foto"];
+		$nombre = $_FILES["foto"]["name"];
+		$temporal = $_FILES["foto"]["tmp_name"];
+		$tipo = $_FILES["foto"]["type"];
+		$tam = $_FILES["foto"]["size"];
+		$dir = "../../img";
+		$respuesta = [
+			"archivo" => "../img/logotipo.png",
+			"status" => 0
+		];
+		if(move_uploaded_file($temporal, $dir.$nombre)){
+			$respuesta["archivo"] = "img/".$nombre;
+			$respuesta["status"] = 1;
+		}
+		echo json_encode($respuesta);
+	}
+}
+//Fin Funciones Works - Karen

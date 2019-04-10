@@ -1,33 +1,263 @@
+header{
+
+justify-content: flex-end;
+margin-top: 30px;
+margin: 30px auto;
+
+}
+
+header .nav-link{ 
+
+float: left;
+color: #000;
+margin-right:6.6%;
+padding-top: 0px;
+width: 70.5%;
+font-size: 15px;
+left: 40px;
+
+}
+
+#logo{
+
+position:relative;
+top: 30px;
+width: 200px;
+
+}
+
+#barra{
+
+position: relative;
+font-size: 13px;
+left: 45px;
+bottom: 10px;
+
+}
+
+.fondoblue{
+
+background: url("../img/fondoazul.png") no-repeat;
+height: 600px;
+background-size: cover;
+margin-top: 53px;
+background-position: absolute;
+        
+}
+
+#word{
+
+font-family: 'Open Sans', sans-serif;
+color: #fff; 
+margin-top: 60px;
+text-align: center;
+position: relative;
+font-size: 35px;
+
+}
+
+#learn{
+
+margin: 5px auto;
+position: relative;
+left: 700px;
+bottom: 45px;
+
+}
+
+#computadora{   
+   text-align: center;
+   padding-top: 85px;
+} 
+
+@media (max-width:1024px) {
+  .fondoblue .container {
+    width: 100%;
+  }
+  #computadora img{
+    width: 100%;
+  }
+}
+
+/* WHAT WE DO */
+.whatwedo html, div, h1, h2, h3, h4, h5, h6, p, img {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  background: #fff;
+}
+
+.warp {
+  width: 80%;
+  margin: 0 auto;
+  height: 100%;
+}
+
+.content-top {
+  padding: 7% 0 5% 0;
+}
+
+.col_what {
+  display: block;
+  float: left;
+  margin: 0% 0 0% 5.6%;
+  text-align: center;
+}
+
+.col_what:first-child {
+  margin-left: 0;
+}
+
+.span_what p {
+  font-size: 0.85em;
+  padding: 0.5em 0;
+  color: #999;
+  line-height: 1.8em;
+}
+.span_what h3{
+  color: #555;
+    margin-bottom: 0.5em;
+    font-size: 1.5em;
+    line-height: 1.2;
+    font-weight: normal;
+    margin-top: 0px;
+    letter-spacing: -1px;
+    text-transform: uppercase;
+}
+
+.span_what .btn-link {
+  padding-top: 10px;
+}
+
+.span_what .btn-link a {
+  color: #00aeff;
+  cursor: pointer;
+  font-size: 0.85em;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.span_what .btn-link a:hover {
+  color: #333;
+}
+
+.span_what {
+  width: 29.2%;
+}
+
+/*RESPONSIVE*/
+
+@media (max-width:1366px) {
+  .wrap {
+    width: 90%;
+    height:   100%;
+  }
+}
+
+@media (max-width:1280px) {
+  .wrap {
+    width: 90%;
+    height:   100%;
+  }
+}
+
+@media (max-width:1024px) {
+  .wrap {
+    width: 90%;
+    height:   100%;
+  }
+}
+
+@media (max-width:800px) {
+  .wrap {
+    width: 90%;
+    height:   100%;
+  }
+}
+
+@media (max-width:768px) {
+  .wrap {
+    width: 90%;
+  }
+}
+
+@media (max-width:640px) {
+  .wrap {
+    width: 90%;
+  }
+  .span_what {
+    width: 100%;
+  }
+  .col_what {
+    margin: 0;
+  }
+}
+
+@media (max-width:480px) {
+  .wrap {
+    width: 90%;
+    height:   100%;
+  }
+  .span_what {
+    width: 100%;
+  }
+  .col_what {
+    margin: 0;
+  }
+}
+
+@media (max-width:320px) {
+  .wrap {
+    width: 90%;
+    height:   100%;
+  }
+  .span_what {
+    width: 100%;
+  }
+  .col_what {
+    margin: 0;
+  }
+}
+
+
+/*Works - Karen*/
 *{
   margin:0;
   padding:0;
   box-sizing: border-box;
 }
 
-body{
-font-family: 'Open Sans', sans-serif;
-  background:#fff;
+.works{
+  margin-top: 380px;
+  width: 100%;
+}
+.container-fluid{   
   background: url('../img/bg_works.png') no-repeat;  
   background-position: absolute;
   background-size: cover;
-  width: 1400px;
-  height: 610px;
-}
-
-.container-fluid{
-  padding-right:190px; 
-  padding-left: 190px;
+  height: 100%;
+  padding: 0 12% 5% 12%;
   font-size: 0;
+
 }
 
 h2{
   font-size: 26px;
-  padding-top: 54px;
+  padding-top: 46px;
   padding-bottom: 20px;
   color: #626262;
  }
 
-.container {
+.content {
+    display: flex;
+    flex-wrap: wrap;
     position: relative;
     width: 250px;
     height: 200px;
@@ -41,6 +271,7 @@ h2{
     width: 250px;
     height: 200px;
     object-fit: cover;
+    max-width: 100%;
 }
 
 .text {
@@ -58,8 +289,9 @@ h2{
   font-weight: bold;
 }
 
-.text p{
+.works .text p{
   font-size: 14px;
+  color:#fff;
 }
 
 .overlay {
@@ -95,6 +327,319 @@ h2{
   background: #008bcc;
 }
 
-.container:hover .overlay {
+.content:hover .overlay {
     opacity: 1;
+}
+
+/*Fin Works - Karen*/
+
+
+
+/*CLIENTS*/
+.txt-rt{text-align:right;}/* text align right */
+.txt-lt{text-align:left;}/* text align left */
+.txt-center{text-align:center;}/* text align center */
+.float-rt{float:right;}/* float right */
+.float-lt{float:left;}/* float left */
+.clear{clear:both;}/* clear float */
+.pos-relative{position:relative;}/* Position Relative */
+.pos-absolute{position:absolute;}/* Position Absolute */  
+
+/*--footer--*/
+.footer{
+  background: #31333E;
+  padding:4% 0;
+}
+.footer-left {
+  float:left;
+}
+.footer-nav{
+  color:#fff;
+}
+.footer-nav li{
+  display:inline-block;
+}
+.footer-nav li a{
+  color:#fff;
+  font-size:0.85em;
+  margin:0 15px;
+}
+.footer-nav li a:hover{
+  color:#00AEFF;
+}
+.copy{
+  padding-top:20px;
+}
+.copy p{
+  color:#fff;
+  font-size:0.85em;
+}
+.copy p a{
+  color:#00AEFF;
+}
+.copy p a:hover{
+  color:#fff;
+}
+.social {
+  float:right;
+}
+.social ul li:first-child, ol li:first-child {
+  margin-top: 0px;
+  margin-left: 0;
+}
+.social li {
+  background: none;
+  padding:0px 0 0 5px;
+  display: inline-block;
+}
+li.facebook a span {
+  height:40px;
+  width:40px;
+  display: block;
+  background: url(../images/img-sprite.png) no-repeat -176px -4px;
+}
+li.facebook a span:hover {
+  opacity:0.8;
+}
+li.linkedin a span {
+  height:40px;
+  width:40px;
+  display: block;
+  background: url(../images/img-sprite.png) no-repeat -222px -4px;
+}
+li.linkedin a span:hover {
+  opacity:0.8;
+}
+li.twitter a span {
+  height:40px;
+  width:40px;
+  display: block;
+  background: url(../images/img-sprite.png) no-repeat -270px -4px;
+}
+li.twitter a span:hover {
+  opacity:0.8;
+}
+li.pinterest a span {
+  height:40px;
+  width:40px;
+  display: block;
+  background: url(../images/img-sprite.png) no-repeat -319px -4px;
+}
+li.pinterest a span:hover {
+  opacity:0.8;
+}
+li.dribble a span {
+  height:40px;
+  width:40px;
+  display: block;
+  background: url(../images/img-sprite.png) no-repeat -366px -4px;
+}
+li.dribble a span:hover {
+  opacity:0.8;
+}
+li.google a span {
+  height:40px;
+  width:40px;
+  display: block;
+  background: url(../images/img-sprite.png) no-repeat -413px -4px;
+}
+li.google a span:hover {
+  opacity:0.8;
+}
+
+/*CLIENTS*/
+.clients{
+  padding:4% 0;
+}
+#jquery-script-menu {
+  position: fixed;
+  height: 90px;
+  width: 100%;
+  top: 0;
+  left: 0;
+  border-top: 5px solid #316594;
+  background: #fff;
+  -moz-box-shadow: 0 2px 3px 0px rgba(0, 0, 0, 0.16);
+  -webkit-box-shadow: 0 2px 3px 0px rgba(0, 0, 0, 0.16);
+  box-shadow: 0 2px 3px 0px rgba(0, 0, 0, 0.16);
+  z-index: 999999;
+  padding: 10px 0;
+}
+.jquery-script-center {
+  width: 960px;
+  margin: 0 auto;
+}
+.jquery-script-center ul {
+  width: 212px;
+  float:left;
+  line-height:45px;
+  margin:0;
+  padding:0;
+  list-style:none;
+}
+.jquery-script-center a {
+  text-decoration:none;
+}
+.jquery-script-ads {
+  width: 728px;
+  height:90px;
+  float:right;
+}
+.jquery-script-clear {
+  clear:both;
+  height:0;
+}
+.clearout {
+  height: 20px;
+  clear: both;
+}
+#flexiselDemo1, #flexiselDemo2, #flexiselDemo3 {
+  display: none;
+}
+.nbs-flexisel-container {
+  position: relative;
+  max-width: 100%;
+}
+.nbs-flexisel-ul {
+  position: relative;
+  width: 9999px;
+  margin: 0px;
+  padding: 0px;
+  list-style-type: none;
+  text-align: center;
+}
+.nbs-flexisel-inner {
+  overflow: hidden;
+  width:80%;
+  margin: 0 auto;
+}
+.nbs-flexisel-item {
+  float: left;
+  margin: 0px;
+  padding: 0px;
+  cursor: pointer;
+  position: relative;
+  line-height: 0px;
+  padding-right:50px;
+}
+.nbs-flexisel-item > img {
+  cursor: pointer;
+  positon: relative;
+}
+/*** Navigation ***/
+.nbs-flexisel-nav-left, .nbs-flexisel-nav-right {
+  width:40px;
+  height:50px;
+  position: absolute;
+  cursor: pointer;
+  z-index: 100;
+}
+.nbs-flexisel-nav-left {
+  left: 0px;
+  background: url(../images/img-sprite.png) no-repeat -83px 4px;
+}
+.nbs-flexisel-nav-right {
+  right: 0px;
+  background: url(../images/img-sprite.png) no-repeat -120px 4px;
+}
+/*--footer--*/
+.footer{
+  background: #31333E;
+  padding:4% 0;
+}
+.footer-left {
+  float:left;
+}
+.footer-nav{
+  color:#fff;
+}
+.footer-nav li{
+  display:inline-block;
+}
+.footer-nav li a{
+  color:#fff;
+  font-size:0.85em;
+  margin:0 15px;
+}
+.footer-nav li a:hover{
+  color:#00AEFF;
+}
+.copy{
+  padding-top:20px;
+}
+.copy p{
+  color:#fff;
+  font-size:0.85em;
+}
+.copy p a{
+  color:#00AEFF;
+}
+.copy p a:hover{
+  color:#fff;
+}
+.social {
+  float:right;
+}
+.social ul li:first-child, ol li:first-child {
+  margin-top: 0px;
+  margin-left: 0;
+}
+.social li {
+  background: none;
+  padding:0px 0 0 5px;
+  display: inline-block;
+}
+li.facebook a span {
+  height:40px;
+  width:40px;
+  display: block;
+  background: url(../images/img-sprite.png) no-repeat -176px -4px;
+}
+li.facebook a span:hover {
+  opacity:0.8;
+}
+li.linkedin a span {
+  height:40px;
+  width:40px;
+  display: block;
+  background: url(../images/img-sprite.png) no-repeat -222px -4px;
+}
+li.linkedin a span:hover {
+  opacity:0.8;
+}
+li.twitter a span {
+  height:40px;
+  width:40px;
+  display: block;
+  background: url(../images/img-sprite.png) no-repeat -270px -4px;
+}
+li.twitter a span:hover {
+  opacity:0.8;
+}
+li.pinterest a span {
+  height:40px;
+  width:40px;
+  display: block;
+  background: url(../images/img-sprite.png) no-repeat -319px -4px;
+}
+li.pinterest a span:hover {
+  opacity:0.8;
+}
+li.dribble a span {
+  height:40px;
+  width:40px;
+  display: block;
+  background: url(../images/img-sprite.png) no-repeat -366px -4px;
+}
+li.dribble a span:hover {
+  opacity:0.8;
+}
+li.google a span {
+  height:40px;
+  width:40px;
+  display: block;
+  background: url(../images/img-sprite.png) no-repeat -413px -4px;
+}
+li.google a span:hover {
+  opacity:0.8;
 }
