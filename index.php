@@ -1,4 +1,9 @@
 <!-- Header Edier-->
+<?php
+	require_once("conectar.php");
+     $consulta ="SELECT * FROM slider";
+    $resultado=mysqli_query($conectar,$consulta);
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -23,7 +28,7 @@
 		  <img src="img/logotipo.png" alt="Logotipo BlueBox" class="img-responsive" id="logo">
 		    <nav class="col-lg-8 offset-lg-5">
 			    <ul class="nav">
-					<li class="nav-item"><a class="nav-link" href="#">ABOUT</a></li> |
+					<li class="nav-item"><a class="nav-link" href="sliders.php">ABOUT</a></li> |
 					<li class="nav-item"><a class="nav-link" href="#">SERVICES</a></li> | 
 					<li class="nav-item"><a class="nav-link" href="#">WORKS</a></li> |
 					<li class="nav-item"><a class="nav-link" href="#">BLOG</a></li> |
@@ -44,10 +49,15 @@
         <div class="container">
             <div class="row">
               <div class="col-lg-6 offset-lg-1">
-                <br><br><br>
-                   <a id="word">We are a Creative Digital Agency</a>
+                <br><br><br><br>
+		<?php
+   			 while($fila = mysqli_fetch_array($resultado)){
+        ?>
+                   <a id="word"><?php echo $fila['texto'];?></a>
+         <?php
+            }
+     	?>          <br>
                    <button type="button" class="btn btn-info" id="learn">Learn More</button>
-                    <br><br>
               </div>
           </div>
      </div> 
@@ -58,8 +68,8 @@
 			<li><img src="img/computadora3.png" alt=""></li>
 			<li><img src="img/computadora4.png" alt=""></li>
 	   </ul> 
-	   <ol class="pagination">
-	   </ol>
+	   <!--<ol class="pagination">
+	   </ol>-->
    </div>
     </div>
 </body>

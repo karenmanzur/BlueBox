@@ -1,3 +1,4 @@
+
 body{
   font-family: 'Raleway', sans-serif;
 }
@@ -24,7 +25,6 @@ font-family: 'Open Sans', sans-serif;
 }
 
 .nav-link:hover{
-
 	color: blue;
 
 }
@@ -56,7 +56,7 @@ margin-top: 53px;
         
 }
 
-#word{
+#word {
 
 font-family: 'Relaway'; 
 color: #fff; 
@@ -65,6 +65,7 @@ text-align: center;
 position: relative;
 font-size: 35px;
 font-family: 'Open Sans', sans-serif;
+ z-index: 1;
 
 }
 
@@ -81,6 +82,7 @@ position: relative;
 left: 700px;
 bottom: 45px;
 font-family: 'Open Sans', sans-serif;
+position: relative;
 
 
 }
@@ -89,6 +91,7 @@ font-family: 'Open Sans', sans-serif;
      
    text-align: center;
    padding-top: 90px;
+   position: relative;
 }
 
 *{
@@ -157,15 +160,47 @@ justify-content: center;
 
 .left{
 
-	left: 10px;
+	left: 50px;
 
 }
 
 .right{
 
-	right: 10px;
+	right: 50px;
 
 }
+
+/*Responsive-- Edier*/
+@media screen and (max-width: 1350px){
+
+#word{
+	font-size: 25px;
+}
+
+#learn{
+    
+    bottom: 15px;
+    left: 400px;
+
+}
+	
+}
+
+@media screen and (max-width: 1120px){
+
+#word{
+	font-size: 15px;
+}
+
+#learn{
+    
+    bottom: 5px;
+    left: 200px;
+}
+	
+}
+
+
 
 /*css Hugo*/
 html, body, div, h1, h2, h3, h4, h5, h6, p, img {
@@ -177,10 +212,6 @@ html, body, div, h1, h2, h3, h4, h5, h6, p, img {
 	vertical-align: baseline;
 }
 
-/*body {
-	font-family: 'Open Sans', sans-serif;
-	background: #fff;
-}*/
 
 .warp {
 	width: 80%;
